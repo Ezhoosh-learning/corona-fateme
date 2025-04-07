@@ -43,7 +43,7 @@ button:hover{
 
 }
 .container{
-    max-width: 90rem;
+    max-width: 95rem;
     margin-right: auto;
     margin-left: auto;
     padding-right: 3rem;
@@ -67,6 +67,7 @@ button:hover{
     gap: 4rem;
     font-size: 1.2rem;
     text-decoration: none;
+    
 }
 .header-item{
     text-decoration: none;
@@ -102,6 +103,8 @@ button:hover{
     align-items: flex-start;
     gap: 2rem;
     margin-bottom: 10rem;
+    font-family: "TTNorms Medium";
+    font-weight: bold;
 }
 .title-main{
     display: flex;
@@ -198,7 +201,7 @@ button:hover{
     width: 100%;
     height: 60px;
     color: #757575;
-    padding: 0 53px;
+    padding: 0 56px;
     appearance: none;
     background-color: rgba(0, 0, 0, 0);
     background-position-x: 0%;
@@ -211,7 +214,7 @@ button:hover{
     background-clip: border-box;
     background-position: 5% 53%, 93% 50%;
     background-repeat: no-repeat;
-    background-size: 40px 30px;
+    background-size: 30px 30px;
     margin: 0 5px;
 }
 .dropdown-date{
@@ -240,7 +243,7 @@ button:hover{
     background-clip: border-box;
     background-position: 5% 53%, 93% 50%;
     background-repeat: no-repeat;
-    background-size: 40px 30px;
+    background-size: 30px 30px;
     margin: 0 5px;
 }
 .statistics-btn{
@@ -270,7 +273,7 @@ button:hover{
     align-items: start;
     height: 100%;
     width: 100%;
-    padding-left: 3rem;
+    padding: 0rem 0rem 3rem 3rem;
     box-shadow: -5px -2px 14px #dddddddb;
     border-radius: 1.5rem;
 }
@@ -291,6 +294,12 @@ button:hover{
     grid-template-rows: 1fr 1fr;
     gap: 8px;
     color: #00E6B5;
+}
+.diff-item1,.diff-item2{
+    color: #003268;
+}
+.diff-item3{
+    color: #FFA000;
 }
 .item-today1{
     grid-column: 1/2;
@@ -335,7 +344,7 @@ button:hover{
     flex-direction: column;
     align-items: center;
     font-size: 1.2rem;
-    gap: 0.5rem;
+    gap: 1.5rem;
     font-weight: bold;
     color: #00e6b5;
 }
@@ -428,6 +437,7 @@ button:hover{
     font-size: 1.2rem;
     font-weight: bold;
     color: #00e6b5;
+    gap: 2rem;
   }
   
 .wordwide-item p {
@@ -697,6 +707,12 @@ button:hover{
 .footer-menu>a{
     text-decoration: none;
     color: #003268;
+    
+}
+.footer-menu>a:hover{
+        opacity: 0.7;
+        text-shadow: -1px 1px 6px #00e6b5;
+        cursor: pointer;
 }
 .footer-menu>p{
     border-bottom: 3px #75757561 solid;
@@ -851,9 +867,7 @@ button:hover{
         width: 45rem;
         width: -webkit-fill-available;
     }
-    .around-blog2::after {
-        bottom: -3rem;
-    }
+    
     .blogs{
         grid-template-columns: auto auto;
     }
@@ -916,6 +930,7 @@ button:hover{
    
     .statistics-grid{
         grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
     
     .statistics-select {
@@ -946,7 +961,11 @@ button:hover{
         height: auto;
     }
     .blogs{
-        grid-template-columns: 16rem auto;
+        grid-template-columns: 50% auto;
+    }
+    .around-blog2::after {
+        bottom: -3rem;
+        right: -5rem;
     }
     .footer-email-input{
         width: 100%;
