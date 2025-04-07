@@ -171,7 +171,7 @@ button:hover{
     font-size: 2.3em;
     margin:50px 0 0 0 ;
 }
-.container-grid{
+.statistics-grid{
     display: grid;
     grid-template-columns: repeat(5 , 1fr);
     grid-template-rows: repeat(2,1fr);
@@ -209,7 +209,7 @@ button:hover{
     cursor: pointer;
     outline: none;
 }
-.static-date{
+.dropdown-date{
     align-items: center;
     width: 33%;
 
@@ -235,7 +235,7 @@ button:hover{
     cursor: pointer;
     outline: none;
 }
-.static-btn{
+.statistics-btn{
     width: 19%;
     height: 60px;
     cursor: pointer;
@@ -253,7 +253,7 @@ button:hover{
 .selector-btn:hover{
     transform: scale(1.03);
 }
-.static-today{
+.statistics-today{
     grid-column: 4/6;
     grid-row: 1/3;
     display: flex;
@@ -266,7 +266,7 @@ button:hover{
     box-shadow: -5px -2px 14px #dddddddb;
     border-radius: 1.5rem;
 }
-.text-today{
+.statistics-today-text{
     color: #003268;
     font-size: 1em;
     font-weight: bold;
@@ -275,7 +275,7 @@ button:hover{
     padding: 15px 0;
     margin-bottom: 15px;
 }
-.number-today{
+.statistics-today-number{
     width: 100%;
     height: 100%;
     display: grid;
@@ -301,7 +301,7 @@ button:hover{
     grid-row: 2/3;
 }
 
-.number-today > div{
+.statistics-today-number > div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -309,12 +309,12 @@ button:hover{
     width: 100%;
     height: 100%;
 }
-.number-today > div > p{
+.statistics-today-number > div > p{
     font-size: 1em;
     font-weight: bold;
     margin: 5px 0;
 }
-.static-number{
+.statistics-number{
     grid-column: 1/4;
     grid-row: 2/3;
     display: flex;
@@ -322,7 +322,7 @@ button:hover{
     justify-content: space-around;
     align-items: center;
 }
-.number-item{
+.statistics-number-item{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -331,12 +331,182 @@ button:hover{
     font-weight: bold;
     color: #00e6b5;
 }
-.number-item>p{
+.statistics-number-item>p{
     margin: 0;
 }
-.number-item > p:first-child{
+.statistics-number-item> p:first-child{
     color: #0065d1;
 }
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 6rem 0;
+  }
+  
+  .chart-title {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #00e6b5;
+  }
+  
+  .chart-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  .total-cases-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    gap: 2rem;
+  }
+  
+  .total-cases {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 4px 20px #c4c4c4a6;
+    border-radius: 2rem;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .total-cases p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #0065d1;
+    margin: 0;
+  }
+  
+  .total-cases canvas {
+    width: 100%;
+    height: 250px;
+  }
+  
+  .wordwide {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    box-shadow: 2px 4px 20px #c4c4c4;
+    border-radius: 2rem;
+    min-width: 200px;
+  }
+  
+  .wordwide-title p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #003268;
+    margin: 0;
+  }
+  
+  .wordwide-info {
+    border-top: 3.5px #dcd5d5b8 solid;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .wordwide-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00e6b5;
+  }
+  
+  .wordwide-item p {
+    margin: 0;
+  }
+  
+  .wordwide-item p:first-child {
+    color: #003268;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 .chart{
     display: flex;
     flex-direction: column;
@@ -354,14 +524,14 @@ button:hover{
     flex-direction: row;
     gap: 4rem;
 }
-.totall{
+.total-cases-wrapper{
     grid-column: 1;
     display: flex;
     width: 100%;
     gap: 2rem;
 }
 
-.total-cases1{
+.total-cases{
    display: flex;
     flex-direction: column;
     box-shadow:2px 4px 20px #c4c4c4a6;
@@ -370,25 +540,21 @@ button:hover{
     padding: 2rem 1rem 1rem 2rem;
 
 }
-.total-cases1>p{
+.total-cases>p{
     font-size: 1.1rem;
     font-weight: bold;
     color: #0065d1;
 
 }
-#chart1{
-    display: block;
-    box-sizing: border-box;
-    height: 146px;
-    width: 292px;
+.chart-total-cases{
+    display: flex;
+    gap: 1rem;
 }
 
-.chart1 {
-    background-color: rgb(192, 192, 192);
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  }
-  
+#chart1,#chart2{
+    width: 350px !important;
+    height: 300px !important;
+}
 .wordwide{
     display: flex;
     flex-direction: column;
@@ -428,8 +594,15 @@ button:hover{
 .wordwide-item>p:nth-child(1){
     color: #003268;
 }
+*/
 
-.order-country{
+
+
+
+
+
+
+.orders-country{
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -438,12 +611,11 @@ button:hover{
     padding: 3rem 2rem;
 }
 .order-country-header{
-    
     display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
 }
 .order-country-title{
     font-size: 2rem;
@@ -468,49 +640,49 @@ button:hover{
     width: 100%;
     border-collapse: collapse;
   }
-.thaed{
+.order-country-thaed{
     border-bottom: #ebebebe0 solid 1px;
 }
-.thaed > th {
+.order-country-thaed > th {
     padding: 10px 0px;
   }
-.tbody{
+.order-country-tbody{
     border-bottom: #ababab77 solid 2px;
 }  
-.tbody > td {
+.order-country-tbody > td {
     color: #5a5a5a;
     padding: 10px 0px;
 }
-.tbody > td > img{
+.order-country-tbody > td > img{
     height: 28px;
     width: 28px;
     border-radius: 100%;
 }
-.tbody > td:last-child {
+.order-country-tbody > td:last-child {
     text-align: right;
 }
-.tbody > td:first-child {
+.order-country-tbody > td:first-child {
     display: flex;
     align-items: center;
     gap: 2rem; 
 }
-.thaed > th > img {
+.order-country-thaed > th > img {
     height: 28px;
     width: 28px;
     border-radius: 100%;
     background-color: #00e6b5;
 }
-.thaed > th:first-child {
+.order-country-thaed > th:first-child {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
-.order-footer{
+.order-country-btn{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.order-footer-btn{
+.order-country-btn>button{
     font-size: 1.2rem;
     font-weight: bolder;
     padding: 1rem 3rem;
@@ -519,9 +691,7 @@ button:hover{
     box-shadow: none;
     color: #fff;
     transition: all 200ms ease;
-    
 }
-
 .blog-countainer{
     height: 100%;
     width: 100%;
@@ -557,23 +727,20 @@ button:hover{
     gap: 0.5rem;
     position: relative;
     border-radius: 25px;
-
 }
-.blog-all{
+.blog-info{
     padding: 4rem 4rem 0rem 1rem;
     z-index: 2;
     color: #fff;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    
 }
-.blog-top{
+.blog-topic{
     font-size: 0.8rem;
     font-weight: bold;
-    
 }
-.blog-footer{
+.blog-data{
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -586,7 +753,6 @@ button:hover{
     align-items: center;
 }
 .blog-background{
-   
     width: 100%;
     height: 100%;
     background: rgb(25, 25, 25);
@@ -607,7 +773,6 @@ button:hover{
     gap: 0.5rem;
     position: relative;
     border-radius: 25px;
-
 }
 .blog-3{
     grid-column: 3/4;
@@ -621,7 +786,6 @@ button:hover{
     gap: 0.5rem;
     position: relative;
     border-radius: 25px;
-
 }
 .blog-4{
     grid-column: 2/3;
@@ -635,7 +799,6 @@ button:hover{
     gap: 0.5rem;
     position: relative;
     border-radius: 25px;
-
 }
 .blog-5{
     grid-column: 3/4;
@@ -656,7 +819,7 @@ button:hover{
     box-shadow: 3px 0px 20px #00e6b5;
     transition: 300ms ease-in 20ms ;
 }
-.around-box1::after{
+.around-blog1::after{
     content: "";
     background-color: #00e6b5;
     height: 9rem;
@@ -668,7 +831,7 @@ button:hover{
     z-index: -1;
 
 }
-.around-box2::after{
+.around-blog2::after{
     content: "";
     background-color: #00e6b5;
     height: 9rem;
@@ -678,7 +841,6 @@ button:hover{
     bottom: -1rem;
     right: -2rem;
     z-index: -1;
-
 }
 .footer{
     display: flex;
@@ -689,44 +851,44 @@ button:hover{
     gap: 4rem;
     margin-bottom: 7rem;
 }
-.menu{
+.footer-menu{
     display: flex;
     flex-direction: column;
     width: 50rem;
     gap: 2rem;
     color: #00e6b5;
 }
-.menu>a{
+.footer-menu>a{
     text-decoration: none;
     color: #003268;
 }
-.menu>p{
+.footer-menu>p{
     border-bottom: 3px #75757561 solid;
     height: 3rem;
     font-weight: bold;
     margin: 0;
 }
-.about-us{
+.footer-about-us{
     display: flex;
     flex-direction: column;
     color: #003268;
     line-height: 2.2rem;
     gap: 2rem;
 }
-.about-us>span{
+.footer-about-us>span{
     border-bottom: 3px #75757561 solid;
     height: 3rem;
     font-weight: bold;
     color: #00e6b5;
 }
-.email{
+.footer-email{
     display: flex;
     flex-direction: row;
     height: 18rem;
     gap: 1rem;
-    align-items: center;
+    align-items: self-start;
 }
-.email-input{
+.footer-email-input{
     width: 22rem;
     height: 4rem;
     border-radius: 3rem;
@@ -739,7 +901,7 @@ button:hover{
     background-repeat: no-repeat , no-repeat;
     background-color: white;
 }
-.email>button{
+.footer-email>button{
     font-size: 1rem;
     padding: 1rem 3rem;
     border-radius: 1.6rem;
@@ -754,20 +916,42 @@ button:hover{
 
 @media only screen and (max-width: 1200px) {
     .container {
-        max-width: 960px;
+        max-width: 100%;
     }
     .main{
         gap: 2rem;
     }
-    .chart-info {
+    /* .chart-info {
         flex-direction: column;
         justify-content: center;
         align-items: center;
       }
-    
+
+    #chart1,#chart2{
+        width: 300px !important;
+        height: 250px !important;
+    }
+
+    .wordwide{
+        width: 100%;
+        padding: 1rem;
+    }
+    .total-cases{
+        padding: 1rem;
+    } */
+    .total-cases-wrapper {
+        flex: 1.5;
+      }
+      .wordwide {
+        flex: 1;
+      }
+      .total-cases{
+        max-width: 17rem;
+      }
     .blogs{
-        grid-template-columns: 31rem auto;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
+        gap: 1rem;
     }
     .blog-1{
         grid-column: 1/2;
@@ -789,26 +973,20 @@ button:hover{
         grid-column: 2/3;
         grid-row: 3/4;
     }
-    .around-box2::after {
+    .around-blog2::after {
         bottom: -1rem;
     }
-    .email-input{
-        width: 13rem;
+    .footer-email-input{
+        width: auto;
     }
-    .email>button {
-        padding: 1rem 1rem;
-    }
-    .email-input {
-        width: 15rem;
-    }
-    .email>button {
-        padding: 1rem 1rem
+    .footer-email>button {
+        padding: 1rem;
     }
         
 }
 @media only screen and (max-width: 992px) {
     .container {
-        max-width: 800px;
+        max-width: 90%;
         margin: 2rem;
     }
     .header-menu{
@@ -833,46 +1011,85 @@ button:hover{
     .statistics-select{
         gap: 0.5rem;
     }
-    .dropdown-country,.static-date{
+    .dropdown-country,.dropdown-date{
         width: 40%;
     }
-    .number-item{
+    .statistics-number-item{
         font-size: 1rem;
     }
-    .chart-info{
-        flex-direction: column;
+    /* .chart-info {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: stretch;
+      }
+    
+      .total-cases-wrapper {
+        flex: 1;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+    
+      .total-cases {
+        padding: 1rem;
+        gap: 1rem;
+        width: 100%;
+      }
+    
+      .total-cases > p {
+        font-size: 0.9rem;
+      }
+    
+      .wordwide {
+        padding: 1rem;
+        gap: 1.5rem;
+        width: 100%;
+      }
+    
+      .wordwide-title > p,
+      .wordwide-item {
+        font-size: 0.9rem;
+      } */
+
+      .total-cases canvas {
+        height: 220px;
+      }
+      .chart-info{
+        flex-wrap: wrap;
+      }
+      .total-cases-wrapper {
+        flex-direction: row;
         justify-content: center;
-        align-items: center;
     }
-    .total-cases1{
-       width: 47%;
-        
-    }
-    .around-box2::after {
+    
+  
+    .around-blog2::after {
         bottom: -3rem;
     }
     .blogs{
-        grid-template-columns: 17rem auto;
+        grid-template-columns: auto auto;
     }
     .footer{
         flex-wrap: wrap;
         gap: 2rem;
-  }
-  .menu{
+    }
+    .footer-menu{
         gap: 1rem;
-  }
-  .about-us{
+    }
+    .footer-about-us{
         gap: 0rem;
-  }
-  .email{
+    }
+    .footer-email{
         height: 100%;
-  }
+    }
     
     
+    
+
 }  
 @media only screen and (max-width: 768px) {
     .container {
-        max-width: 650px;
+        max-width: 100%;
     }
     .header-menu{
         gap: 1rem;
@@ -883,11 +1100,15 @@ button:hover{
     .header{
         justify-content: center;
     }
-    .static-today{
+    .statistics-today{
         padding-left: 1rem;
     }
+    .dropdown-country{
+        width: 100%s;
+    }
     .select-country, .select-date{
-        font-size: 1rem;
+        font-size: 1.1rem;
+        height: 50px;
         background-size: 1.8rem 2.2rem;
         background-position: 1.1rem 0.7rem;
         padding-left: 54px;
@@ -896,34 +1117,44 @@ button:hover{
     .select-date{
         background-image: url(../icons/icons8-calenda.png);
     }
-    .container-grid{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+    .statistics-grid{
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .statistics-select {
         grid-column: 1 / 4;
         grid-row: 1 / 2;
     }
-    .static-number {
+    .statistics-number {
         grid-column: 1 / 4;
         grid-row: 2 / 3;
     }
-    .static-today {
+    .statistics-today {
         grid-column: 1 / 4;
         grid-row: 3 / 4;
     }
-    .totall {
+    /* .total-cases-wrapper {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        justify-content: space-between;
     }
-    .total-cases1 {
-        width: 100%;
+    .total-cases{
+        width: auto;
     }
     .wordwide{
         width: 100%;
-    }
+    } */
+
+    .chart-info {
+        flex-direction: column;
+      }
+      .total-cases-wrapper {
+        flex-direction: column;
+      }
+      .wordwide {
+        width: 100%;
+      }
     .order-country-info {
         overflow-x: scroll;
     }
@@ -933,7 +1164,40 @@ button:hover{
     .blogs{
         grid-template-columns: 16rem auto;
     }
+    .footer-email-input{
+        width: 100%;
+    }
    
+    .chart-info {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+      }
+      #chart1, #chart2 {
+        width: 494px !important;
+        height: 250px !important;
+    }
+    .chart-total-cases{
+        flex-direction: column;
+    }
+      .total-cases-wrapper {
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+      }
+    
+      .total-cases,
+      .wordwide {
+        max-width: none;
+      }
+    
+      .total-cases {
+        padding: 1.5rem;
+      }
+    
+      .wordwide {
+        padding: 2rem;
+      }
   
 }
 @media only screen and (max-width: 576px) {
@@ -969,20 +1233,21 @@ button:hover{
     .buttons-main{
         flex-direction: column;
     }
-    .container-grid{
-        grid-template-rows: repeat(3, auto);
-        gap: 3rem;
+    .statistics-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
-   .static-number{
+   .statistics-number{
         flex-wrap: wrap;
         gap: 1rem;
         height: 50%;
-    
    }
    .statistics-select{
         flex-direction: column;
+        gap: 0.7rem;
    }
-   .dropdown-country,.static-date,.static-btn{
+   .dropdown-country,.dropdown-date,.statistics-btn{
         width: 100%;
    }
    .select-country{
@@ -995,12 +1260,19 @@ button:hover{
         background-size: 1.5rem 2.2rem;
         background-position: 1.5rem 0.7rem, 14rem 0.8rem;
    }
-  .totall{
-        flex-direction: column;
+  
+  .chart-info {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 1rem;
   }
-  .wordwide{
-        width: 100%;
+  .total-cases{
+    width: 42rem;
   }
+  #chart1, #chart2 {
+    width: 348px !important;
+    height: 250px !important;
+}
   .order-country-header{
     gap: 0.6rem;
   }
@@ -1024,7 +1296,7 @@ button:hover{
   .blog-1{
         height: 25rem;
   }
-  .around-box2::after {
+  .around-blog2::after {
         bottom: 0rem;
   }
  
