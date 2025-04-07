@@ -188,7 +188,7 @@ button:hover{
     align-items: center;
 }
 .dropdown-country{
-    width: 33%;
+    width: 40%;
 }
 .select-country{
     font-size: 1.3rem;
@@ -198,20 +198,25 @@ button:hover{
     width: 100%;
     height: 60px;
     color: #757575;
-    padding: 0 15px;
+    padding: 0 53px;
     appearance: none;
-    background-image: url(../icons/ca.svg) , url(../icons/slector.svg);
-    background-size: 2.2rem 2.2rem;
-    background-position: 1.5rem 0.7rem, 14rem 0.7rem;
-    background-repeat: no-repeat , no-repeat;
-    background-color: white;
-    padding-left: 70px;
-    cursor: pointer;
-    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: url(../icons/ca.svg), url(../icons/slector.svg);
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-position: 5% 53%, 93% 50%;
+    background-repeat: no-repeat;
+    background-size: 40px 30px;
+    margin: 0 5px;
 }
 .dropdown-date{
     align-items: center;
-    width: 33%;
+    width: 40%;
 
 }
 .select-date{
@@ -222,18 +227,21 @@ button:hover{
     width: 100%;
     height: 60px;
     color: #757575;
-    padding: 0 0 0 3rem;
+    padding: 0 53px;
     appearance: none;
-    background-image: url(../icons/icons8-calenda.png) , url(../icons/slector.svg);
-    background-size: 2.2rem 2.2rem;
-    background-color: #757575;
-    cursor: 0.7;
-    background-position: 1.5rem 0.7rem, 14rem 0.7rem;
-    background-repeat: no-repeat , no-repeat;
-    background-color: white;
-    padding-left: 70px;
-    cursor: pointer;
-    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: url(../icons/date.svg), url(../icons/slector.svg);
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-position: 5% 53%, 93% 50%;
+    background-repeat: no-repeat;
+    background-size: 40px 30px;
+    margin: 0 5px;
 }
 .statistics-btn{
     width: 19%;
@@ -345,28 +353,29 @@ button:hover{
     margin: 6rem 0;
   }
   
-  .chart-title {
+.chart-title {
     font-size: 3rem;
     font-weight: bolder;
     color: #00e6b5;
   }
   
-  .chart-info {
+.chart-info {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 2rem;
     width: 100%;
+    padding: 1rem;
   }
   
-  .total-cases-wrapper {
+.total-cases-wrapper {
     display: flex;
     flex-direction: row;
     flex: 2;
     gap: 2rem;
   }
   
-  .total-cases {
+.total-cases {
     display: flex;
     flex-direction: column;
     box-shadow: 2px 4px 20px #c4c4c4a6;
@@ -375,19 +384,19 @@ button:hover{
     padding: 1rem;
   }
   
-  .total-cases p {
+.total-cases p {
     font-size: 1.1rem;
     font-weight: bold;
     color: #0065d1;
     margin: 0;
   }
   
-  .total-cases canvas {
+.total-cases canvas {
     width: 100%;
     height: 250px;
   }
   
-  .wordwide {
+.wordwide {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -398,14 +407,14 @@ button:hover{
     min-width: 200px;
   }
   
-  .wordwide-title p {
+.wordwide-title p {
     font-size: 1.1rem;
     font-weight: bold;
     color: #003268;
     margin: 0;
   }
   
-  .wordwide-info {
+.wordwide-info {
     border-top: 3.5px #dcd5d5b8 solid;
     padding-top: 2rem;
     display: grid;
@@ -413,7 +422,7 @@ button:hover{
     gap: 1.5rem;
   }
   
-  .wordwide-item {
+.wordwide-item {
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
@@ -421,186 +430,13 @@ button:hover{
     color: #00e6b5;
   }
   
-  .wordwide-item p {
+.wordwide-item p {
     margin: 0;
   }
   
-  .wordwide-item p:first-child {
+.wordwide-item p:first-child {
     color: #003268;
    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-.chart{
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    margin: 6rem 0;
-}
-.chart-title{
-    font-size: 3rem;
-    font-weight: bolder;
-    color: #00e6b5;
-
-}
-.chart-info{
-   display: flex;
-    flex-direction: row;
-    gap: 4rem;
-}
-.total-cases-wrapper{
-    grid-column: 1;
-    display: flex;
-    width: 100%;
-    gap: 2rem;
-}
-
-.total-cases{
-   display: flex;
-    flex-direction: column;
-    box-shadow:2px 4px 20px #c4c4c4a6;
-    border-radius: 2rem;
-    gap: 2.5rem;
-    padding: 2rem 1rem 1rem 2rem;
-
-}
-.total-cases>p{
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #0065d1;
-
-}
-.chart-total-cases{
-    display: flex;
-    gap: 1rem;
-}
-
-#chart1,#chart2{
-    width: 350px !important;
-    height: 300px !important;
-}
-.wordwide{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    gap: 3rem;
-    width: 56%;
-    box-shadow: 2px 4px 20px #c4c4c4;
-    border-radius: 2rem;
-}
-
-.wordwide-title>p{
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #003268;
-
-}
-.wordwide-info{
-    border-top: 3.5px #dcd5d5b8 solid;
-    padding-top: 2rem;
-    display: grid;
-    grid-template-columns:repeat(2,auto) ;
-    grid-template-rows: repeat(2,auto);
-    gap: 2rem;
-}
-.wordwide-item{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    font-size: 1.2rem;
-    gap: 1rem;
-    font-weight: bold;
-    color: #00e6b5;
-}
-.wordwide-item>p{
-    margin: 0;
-}
-.wordwide-item>p:nth-child(1){
-    color: #003268;
-}
-*/
-
-
-
-
-
-
 
 .orders-country{
     display: flex;
@@ -921,24 +757,6 @@ button:hover{
     .main{
         gap: 2rem;
     }
-    /* .chart-info {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-    #chart1,#chart2{
-        width: 300px !important;
-        height: 250px !important;
-    }
-
-    .wordwide{
-        width: 100%;
-        padding: 1rem;
-    }
-    .total-cases{
-        padding: 1rem;
-    } */
     .total-cases-wrapper {
         flex: 1.5;
       }
@@ -947,6 +765,7 @@ button:hover{
       }
       .total-cases{
         max-width: 17rem;
+        
       }
     .blogs{
         grid-template-columns: 1fr 1fr;
@@ -1017,52 +836,21 @@ button:hover{
     .statistics-number-item{
         font-size: 1rem;
     }
-    /* .chart-info {
-        flex-direction: row;
-        gap: 1rem;
-        justify-content: space-between;
-        align-items: stretch;
-      }
-    
-      .total-cases-wrapper {
-        flex: 1;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-    
-      .total-cases {
-        padding: 1rem;
-        gap: 1rem;
+    .total-cases{
         width: 100%;
-      }
-    
-      .total-cases > p {
-        font-size: 0.9rem;
-      }
-    
-      .wordwide {
-        padding: 1rem;
-        gap: 1.5rem;
-        width: 100%;
-      }
-    
-      .wordwide-title > p,
-      .wordwide-item {
-        font-size: 0.9rem;
-      } */
-
-      .total-cases canvas {
+    }
+    .total-cases canvas {
         height: 220px;
       }
-      .chart-info{
+    .chart-info{
         flex-wrap: wrap;
       }
-      .total-cases-wrapper {
+    .total-cases-wrapper {
         flex-direction: row;
         justify-content: center;
+        width: 45rem;
+        width: -webkit-fill-available;
     }
-    
-  
     .around-blog2::after {
         bottom: -3rem;
     }
@@ -1082,10 +870,32 @@ button:hover{
     .footer-email{
         height: 100%;
     }
-    
-    
-    
-
+    .select-country{
+        font-size: 1rem;
+        padding: 0 38px;
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+        background-size: auto;
+        background-origin: padding-box;
+        background-clip: border-box;
+        background-position: 5% 53%, 93% 50%;
+        background-repeat: no-repeat;
+        background-size: 32px 18px;
+    }
+    .select-date{
+        font-size: 1rem;
+        padding: 0 38px;
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+        background-size: auto;
+        background-origin: padding-box;
+        background-clip: border-box;
+        background-position: 5% 53%, 93% 50%;
+        background-repeat: no-repeat;
+        background-size: 32px 18px;
+    }
 }  
 @media only screen and (max-width: 768px) {
     .container {
@@ -1103,20 +913,7 @@ button:hover{
     .statistics-today{
         padding-left: 1rem;
     }
-    .dropdown-country{
-        width: 100%s;
-    }
-    .select-country, .select-date{
-        font-size: 1.1rem;
-        height: 50px;
-        background-size: 1.8rem 2.2rem;
-        background-position: 1.1rem 0.7rem;
-        padding-left: 54px;
-        background-image: url(../icons/ca.svg);
-    }
-    .select-date{
-        background-image: url(../icons/icons8-calenda.png);
-    }
+   
     .statistics-grid{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1133,19 +930,6 @@ button:hover{
         grid-column: 1 / 4;
         grid-row: 3 / 4;
     }
-    /* .total-cases-wrapper {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .total-cases{
-        width: auto;
-    }
-    .wordwide{
-        width: 100%;
-    } */
-
     .chart-info {
         flex-direction: column;
       }
@@ -1174,7 +958,7 @@ button:hover{
         align-items: center;
       }
       #chart1, #chart2 {
-        width: 494px !important;
+        width: 368px !important;
         height: 250px !important;
     }
     .chart-total-cases{
@@ -1193,11 +977,13 @@ button:hover{
     
       .total-cases {
         padding: 1.5rem;
+        width: -webkit-fill-available;
       }
     
       .wordwide {
         padding: 2rem;
       }
+      
   
 }
 @media only screen and (max-width: 576px) {
@@ -1250,54 +1036,47 @@ button:hover{
    .dropdown-country,.dropdown-date,.statistics-btn{
         width: 100%;
    }
-   .select-country{
-        background-image: url(../icons/ca.svg), url(../icons/slector.svg);
-        background-size: 1.5rem 2.2rem;
-        background-position: 1.5rem 0.7rem, 14rem 0.8rem;
-   }
-   .select-date{
-        background-image: url(../icons/icons8-calenda.png), url(../icons/slector.svg);
-        background-size: 1.5rem 2.2rem;
-        background-position: 1.5rem 0.7rem, 14rem 0.8rem;
-   }
+   
+   .select-date,.select-country{
+        padding: 0 55px;
+        background-size: 30px 30px;
+    }
   
-  .chart-info {
-    flex-direction: row;
-    overflow-x: auto;
-    gap: 1rem;
-  }
-  .total-cases{
-    width: 42rem;
-  }
-  #chart1, #chart2 {
-    width: 348px !important;
-    height: 250px !important;
-}
-  .order-country-header{
-    gap: 0.6rem;
-  }
-  .order-btn{
-    padding: 1rem 1rem;
-    width: 100%;
-  }
-  .order-country-info{
+    .chart-info {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 1rem;
+    }
+  
+    #chart1, #chart2 {
+        width: 290px !important;
+        height: 183px !important;
+    }
+    .order-country-header{
+        gap: 0.6rem;
+    }
+    .order-btn{
+        padding: 1rem 1rem;
+        width: 100%;
+    }
+    .order-country-info{
         overflow-x: scroll;
-  }
-  .order-country-info > table {
+    }
+    .order-country-info > table {
         width: 40rem;
-  }
-  .blogs{
+    }
+    .blogs{
         display: flex;
         flex-direction: column;
         height: auto;
         margin: 0;
 
-  }
-  .blog-1{
+    }
+    .blog-1{
         height: 25rem;
-  }
-  .around-blog2::after {
+    }
+    .around-blog2::after {
         bottom: 0rem;
-  }
+    }
  
 }
