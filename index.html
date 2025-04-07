@@ -38,7 +38,7 @@
         </section>
         <section class="statistics">
             <p class="statistics-title">STATISTICS</p>
-        <div class="container-grid">
+        <div class="statistics-grid">
             <div class="statistics-select">
                 <div class="dropdown-country">
                 <select class="select-country">
@@ -50,43 +50,43 @@
                     <option class="select-item"  value="fr">Franch</option>
                 </select>
                 </div>   
-                <div class="static-date">                     
+            <div class="dropdown-date">                     
                     <select class="select-date" name="" id="">
-                        <option value="">Date</option>
-                        <option value="">2025</option>
-                        <option value="">2024</option>
-                        <option value="">2023</option>
-                        <option value="">2022</option>
-                        <option value="">2021</option>
-                    </select>
+                    <option value="">Date</option>
+                    <option value="">2025</option>
+                    <option value="">2024</option>
+                    <option value="">2023</option>
+                    <option value="">2022</option>
+                    <option value="">2021</option>
+                </select>
                 </div>
-                <button class="static-btn">Filter</button>
+                <button class="statistics-btn">Filter</button>
             </div> 
-            <div class="static-number">
-                <div class="number-item">
+            <div class="statistics-number">
+                <div class="statistics-number-item">
                     <p>14</p>
                     <p>Rancks</p>
                 </div>
-                <div class="number-item">
+                <div class="statistics-number-item">
                     <p>12,456</p>
                     <p>Total Cases</p>
                 </div>
-                <div class="number-item">
+                <div class="statistics-number-item">
                     <p style="color: #FFA000;">836</p>
                     <p>Death</p>
                 </div>
-                <div class="number-item">
+                <div class="statistics-number-item">
                     <p>12,456</p>
                     <p>Recovered</p>
                 </div>
-                <div class="number-item">
+                <div class="statistics-number-item">
                     <p>12,456</p>
                     <p>Recovered</p>
                 </div>
             </div>
-            <div class="static-today">
-                <p class="text-today">TODAY STATISTICS</p>
-                <div class="number-today">
+            <div class="statistics-today">
+                <p class="statistics-today-text">TODAY STATISTICS</p>
+                <div class="statistics-today-number">
                     <div class="item-today1">
                         <p style="color: #0065d1;">2,464</p>
                         <p>Total Cases</p>
@@ -107,52 +107,108 @@
             </div>
         </div>    
         </section>
+
         <section class="chart">
-        <div class="chart-title">CHART</div>
-        <div class="chart-info">
-            <div class="totall">
-                <div class="total-cases1">
-                    <p>TOTAL CASES</p>
-                    <canvas id="chart1"></canvas>
+            <div class="chart-title">CHART</div>
+            <div class="chart-info">
+              <div class="total-cases-wrapper">
+                <div class="total-cases">
+                  <p>TOTAL CASES</p>
+                  <canvas id="chart1"></canvas>
                 </div>
-                <div class="total-cases1">
-                    <p>TOTAL CASES</p>
-                    <canvas id="chart2"></canvas>
+                <div class="total-cases">
+                  <p>TOTAL CASES</p>
+                  <canvas id="chart2"></canvas>
                 </div>
-            </div>
-            <div class="wordwide">
+              </div>
+              <div class="wordwide">
                 <div class="wordwide-title">
-                    <p>WORLDWIDE STATISTICS</p>
+                  <p>WORLDWIDE STATISTICS</p>
                 </div>
                 <div class="wordwide-info">
-                <div class="wordwide-item">
-                <p>2,464</p>
-                <p>Total Cases</p>
+                  <div class="wordwide-item">
+                    <p>2,464</p>
+                    <p>Total Cases</p>
+                  </div>
+                  <div class="wordwide-item">
+                    <p style="color: aqua;">981</p>
+                    <p>Recovered</p>
+                  </div>
+                  <div class="wordwide-item">
+                    <p>1,643</p>
+                    <p>Infected Now</p>
+                  </div>
+                  <div class="wordwide-item">
+                    <p style="color: #FFA000;">542</p>
+                    <p>Deaths</p>
+                  </div>
                 </div>
-                <div class="wordwide-item">
-                <p style="color: aqua;">981</p>
-                <p>Recovered</p>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <!-- <section class="chart">
+        <div class="chart-title">CHART</div>
+        <div class="chart-info">
+            <div class="total-cases-wrapper">
+
+                <div class="chart-total-cases">
+                    <div class="total-cases">
+                        <p>TOTAL CASES</p>
+                        <canvas id="chart1"  width="400" height="300" style="width: 100%; height: auto;"></canvas>
+                    </div>
+                    <div class="total-cases">
+                        <p>TOTAL CASES</p>
+                        <canvas id="chart2"  width="400" height="300" style="width: 100%; height: auto;"></canvas>
+                    </div>
                 </div>
-                <div class="wordwide-item">
-                <p>1,643</p>
-                <p>Infected Now</p>
+                <div class="wordwide">
+                    <div class="wordwide-title">
+                        <p>WORLDWIDE STATISTICS</p>
+                    </div>
+                    <div class="wordwide-info">
+                    <div class="wordwide-item">
+                    <p>2,464</p>
+                    <p>Total Cases</p>
+                    </div>
+                    <div class="wordwide-item">
+                    <p style="color: aqua;">981</p>
+                    <p>Recovered</p>
+                    </div>
+                    <div class="wordwide-item">
+                    <p>1,643</p>
+                    <p>Infected Now</p>
+                    </div>
+                    <div class="wordwide-item">
+                    <p style="color: #FFA000;">542</p>
+                    <p>Deaths</p>
+                    </div>
+                    </div>    
                 </div>
-                <div class="wordwide-item">
-                <p style="color: #FFA000;">542</p>
-                <p>Deaths</p>
-                </div>
-                </div>    
             </div>
         </div>    
-        </section>
-       <section class="order-country">
+        </section>-->
+       <section class="orders-country">
             <div class="order-country-header">
                 <p class="order-country-title">Orders Country</p>
                 <button class="order-btn">Filter</button>
             </div>
             <div class="order-country-info">
                 <table>
-                <tr class="thaed">
+                <tr class="order-country-thaed">
                     <th>
                         <img src="assets/icons/icons8-check.svg" alt="">
                         country
@@ -164,7 +220,7 @@
                     <th>TRACKING</th>
                     
                 </tr>
-                <tr class="tbody">
+                <tr class="order-country-tbody">
                     <td>
                         <img src="assets/icons/us.svg" alt="">
                         USA
@@ -174,9 +230,9 @@
                     <td>8,647,748</td>
                     <td>1</td>
                     <td>IN332942</td>
-                    <td class="tbody-icon"><img src="assets/icons/ellipsis-vertical-solid.svg" alt=""></td>
+                    <td ><img src="assets/icons/ellipsis-vertical-solid.svg" alt=""></td>
                 </tr>
-                <tr class="tbody">  
+                <tr class="order-country-tbody">  
                     <td>
                         <img src="assets/icons/cn.svg" alt="">
                         China
@@ -186,9 +242,9 @@
                     <td>8,647,748</td>
                     <td>1</td>
                     <td>IN332942</td>
-                    <td class="tbody-icon"><img src="assets/icons/ellipsis-vertical-solid.svg" alt=""></td>
+                    <td > <img src="assets/icons/ellipsis-vertical-solid.svg" alt=""></td>
                 </tr>   
-                <tr class="tbody"> 
+                <tr class="order-country-tbody"> 
                     <td>
                         <img src="assets/icons/in.svg" alt="">
                         India
@@ -198,10 +254,10 @@
                     <td>8,647,748</td>
                     <td>1</td>
                     <td>IN332942</td>
-                    <td class="tbody-icon"><img src="assets/icons/ellipsis-vertical-solid.svg" alt=""></td>
+                    <td ><img src="assets/icons/ellipsis-vertical-solid.svg" alt=""></td>
 
                 </tr>  
-                <tr class="tbody">    
+                <tr class="order-country-tbody">    
                     <td>
                         <img src="assets/icons/br.svg" alt="">
                         Brazil
@@ -211,10 +267,10 @@
                     <td>8,647,748</td>
                     <td>1</td>
                     <td>IN332942</td>
-                    <td class="tbody-icon"><img src="assets/icons/ellipsis-vertical-solid.svg" alt=""></td>
+                    <td><img src="assets/icons/ellipsis-vertical-solid.svg" alt=""></td>
 
                 </tr>   
-                <tr class="tbody">   
+                <tr class="order-country-tbody">   
                     <td>
                         <img src="assets/icons/ar.svg" alt="">
                         Argentina
@@ -224,10 +280,10 @@
                     <td>8,647,748</td>
                     <td>1</td>
                     <td>IN332942</td>
-                    <td class="tbody-icon"><img src="assets/icons/ellipsis-vertical-solid.svg" alt=""></td>
+                    <td ><img src="assets/icons/ellipsis-vertical-solid.svg" alt=""></td>
 
                 </tr>  
-                <tr class="tbody">    
+                <tr class="order-country-tbody">    
                     <td>
                         <img src="assets/icons/ir.svg" alt="">
                         Iran
@@ -237,10 +293,10 @@
                     <td>8,647,748</td>
                     <td>1</td>
                     <td>IN332942</td>
-                    <td class="tbody-icon"><img src="assets/icons/ellipsis-vertical-solid.svg" alt=""></td>
+                    <td><img src="assets/icons/ellipsis-vertical-solid.svg" alt=""></td>
 
                 </tr>  
-                <tr class="tbody">    
+                <tr class="order-country-tbody">    
                     <td>
                         <img src="assets/icons/ca.svg" alt="">
                         Canada
@@ -250,24 +306,24 @@
                     <td>8,647,748</td>
                     <td>1</td>
                     <td>IN332942</td>
-                    <td class="tbody-icon"><img src="assets/icons/ellipsis-vertical-solid.svg" alt=""></td>
+                    <td ><img src="assets/icons/ellipsis-vertical-solid.svg" alt=""></td>
 
                 </tr>
                 </table>
             </div>
-            <div class="order-footer">
-            <button class="order-footer-btn">See More</button>
+            <div class="order-country-btn">
+            <button>See More</button>
             </div>
         </section>
         <section class="blog-countainer">
             <div class="blog-title">BLOG</div>
             <div class="blogs">
                 <div class="blog-1">
-                <div class="blog-all">
-                    <p class="blog-top">
+                <div class="blog-info">
+                    <p class="blog-topic">
                         10 Dangerous diseases Lorem spam
                     </p>
-                    <div class="blog-footer">
+                    <div class="blog-data">
                         <div class="bloggers">
                             <img width="20px" height="20px" src="assets/icons/user.png" alt="">
                             <p>fateme shafiee</p>
@@ -281,11 +337,11 @@
                 <div class="blog-background"></div>
                 </div>
                 <div class="blog-2">
-                    <div class="blog-all">
-                        <p class="blog-top">
+                    <div class="blog-info">
+                        <p class="blog-topic">
                             10 Dangerous diseases Lorem spam
                         </p>
-                        <div class="blog-footer">
+                        <div class="blog-data">
                             <div class="bloggers">
                                 <img width="20px" height="20px" src="assets/icons/user.png" alt="">
                                 <p>fateme shafiee</p>
@@ -299,11 +355,11 @@
                     <div class="blog-background"></div>
                 </div>
                 <div class="blog-3">
-                    <div class="blog-all">
-                        <p class="blog-top">
+                    <div class="blog-info">
+                        <p class="blog-topic">
                             10 Dangerous diseases Lorem spam
                         </p>
-                        <div class="blog-footer">
+                        <div class="blog-data">
                             <div class="bloggers">
                                 <img width="20px" height="20px" src="assets/icons/user.png" alt="">
                                 <p>fateme shafiee</p>
@@ -317,11 +373,11 @@
                     <div class="blog-background"></div>
                 </div>
                 <div class="blog-4">
-                    <div class="blog-all">
-                        <p class="blog-top">
+                    <div class="blog-info">
+                        <p class="blog-topic">
                             10 Dangerous diseases Lorem spam
                         </p>
-                        <div class="blog-footer">
+                        <div class="blog-data">
                             <div class="bloggers">
                                 <img width="20px" height="20px" src="assets/icons/user.png" alt="">
                                 <p>fateme shafiee</p>
@@ -335,11 +391,11 @@
                     <div class="blog-background"></div>
                 </div>
                 <div class="blog-5">
-                    <div class="blog-all">
-                        <p class="blog-top">
+                    <div class="blog-info">
+                        <p class="blog-topic">
                             10 Dangerous diseases Lorem spam
                         </p>
-                        <div class="blog-footer">
+                        <div class="blog-data">
                             <div class="bloggers">
                                 <img width="20px" height="20px" src="assets/icons/user.png" alt="">
                                 <p>fateme shafiee</p>
@@ -352,31 +408,30 @@
                     </div>
                     <div class="blog-background"></div>
                 </div>
-                <section class="around-box1"></section>
-                <section class="around-box2"></section>
+                <section class="around-blog1"></section>
+                <section class="around-blog2"></section>
             </div>
         </section>
         </main>
         <footer class="footer">
-            <div class="menu">
+            <div class="footer-menu">
                 <p>Menu</p>
                 <a href="">Home</a>
                 <a href="">Service</a>
                 <a href="">Question & Answers</a>
                 <a href="">About Us</a>
             </div>
-            <div class="about-us">
+            <div class="footer-about-us">
                 <span>About Us</span>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, numquam placeat. Magnam error amet cupiditate qui minus libero explicabo quo mollitia eum pariatur, recusandae velit harum voluptatibus accusantium accusamus perferendis.</p>
             </div>
-            <div class="email">
-                <input class="email-input" type="email" placeholder="Email">
+            <div class="footer-email">
+                <input class="footer-email-input" type="email" placeholder="Email">
                 <button>Send</button>
             </div>
         </footer>
         
 </div>
 <script src="assets/javaScript/script1.js"></script>
-<script src="assets/javaScript/script2.js"></script>
 </body>
 </html>
