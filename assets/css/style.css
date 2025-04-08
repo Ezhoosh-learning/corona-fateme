@@ -1,14 +1,17 @@
 @font-face {
     font-family: "TTNorms";
-    src: url("../fonts/TTNorms-Regular.woff") format("openType");
+    src: url('../fonts/TTNorms-Regular-clean.woff2') format('woff2'),
+    url('../fonts/TTNorms-Regular.woff') format('woff');
 }
 @font-face {
     font-family: "TTNorms Medium";
-    src: url("../fonts/TTNorms-Medium.woff") format("openType");
+    src: url('../fonts/TTNorms-Medium-clean.woff2') format('woff2'),
+    url('../fonts/TTNorms-Medium.woff') format('woff');
 }
 @font-face {
     font-family: "TTNorms Light";
-    src: url("../fonts/TTNorms-Light.woff") format("openType");
+    src: url('../fonts/TTNorms-Light-clean.woff2') format('woff2'),
+    url('../fonts/TTNorms-Light.woff') format('woff');
 }
 
 
@@ -368,10 +371,11 @@ button:hover{
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    gap: 2rem;
+    padding:2rem;
+    gap:2rem;
     box-shadow: 2px 4px 20px #c4c4c4;
-    border-radius: 2rem;
+    border-radius:2rem;
+    
 
   }
   
@@ -722,7 +726,20 @@ button:hover{
     transition: all 200ms ease;
     border: 3px solid #00e6b5;
 }
-
+@media only screen and (max-width: 1450px) {
+    .chart{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #chart1, #chart2 {
+        width: 100% !important;
+        height: 100% !important;
+      }
+      .total-cases {
+        width: 100%;
+        height: 100%;
+      }
+    
+}
 
 
 @media only screen and (max-width: 1200px) {
@@ -732,8 +749,13 @@ button:hover{
     .main{
         gap: 2rem;
     }
-      .wordwide {
-        flex: 1;
+    .chart{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .wordwide {
+        flex-wrap: wrap;
+        grid-column: 1/3;
       }
     
     .blogs{
@@ -760,9 +782,6 @@ button:hover{
     .blog-5{
         grid-column: 2/3;
         grid-row: 3/4;
-    }
-    .around-blog2::after {
-        bottom: -1rem;
     }
     .footer-email-input{
         width: auto;
@@ -807,17 +826,17 @@ button:hover{
     }
     .chart{
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 2rem;
+    }
+    #chart1, #chart2 {
+        width: 100% !important;
+        height: 100% !important;
     }
     .total-cases{
         width: 100%;
     }
-    .total-cases canvas {
-        height: 220px;
-      }
-    .wordwide{
-        flex-wrap: wrap;
-    }
+    
+    
     .blogs{
         grid-template-columns: auto auto;
     }
@@ -897,7 +916,8 @@ button:hover{
     }
     .chart{
         grid-template-columns: repeat(1, 1fr);
-        gap: 1rem;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 4rem;
         }
     .wordwide {
         width: 100%;
@@ -911,17 +931,10 @@ button:hover{
     .blogs{
         grid-template-columns: 50% auto;
     }
-    .around-blog2::after {
-        bottom: -3rem;
-        right: -4rem;
-    }
     .footer-email-input{
         width: 100%;
     }
-      #chart1, #chart2 {
-        width: 368px !important;
-        height: 250px !important;
-    }
+    
     .chart-total-cases{
         flex-direction: column;
     }
@@ -931,7 +944,7 @@ button:hover{
       }
     
       .total-cases {
-        
+        grid-column: 1 / 3;
         width: -webkit-fill-available;
       }
     
@@ -995,11 +1008,10 @@ button:hover{
         padding: 0 55px;
         background-size: 30px 30px;
     }
-
-    #chart1, #chart2 {
-        width: 290px !important;
-        height: 183px !important;
+    .chart{
+        grid-template-rows: repeat(1, 1fr);
     }
+    
     .order-country-header{
         gap: 0.6rem;
     }
@@ -1046,4 +1058,14 @@ button:hover{
         align-items: center;
     
     }
+    .chart{
+        grid-template-rows: repeat(1, 1fr);
+    }
+    
+}
+@media only screen and (max-width: 350px){
+    .chart {
+        gap:4rem;
+      }
+   
 }
