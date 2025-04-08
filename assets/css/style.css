@@ -42,8 +42,8 @@ button:hover{
     max-width: 95rem;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
 
 }
 .header{
@@ -163,6 +163,7 @@ button:hover{
     justify-content: start;
     align-items: start;
     height: 50%;
+    
 }
 .statistics-title{
     color: #00E6B5;
@@ -332,27 +333,16 @@ button:hover{
 }
 
 .chart {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    margin: 6rem 0;
-  }
-  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5rem 0rem 5rem 0rem;
+    gap: 1rem;
+}
 .chart-title {
     font-size: 3rem;
     font-weight: bolder;
     color: #00e6b5;
   }
-  
-.chart-info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 2rem;
-    width: 100%;
-    padding: 1rem;
-  }
-  
 .total-cases-wrapper {
     display: flex;
     flex-direction: row;
@@ -361,12 +351,8 @@ button:hover{
   }
   
 .total-cases {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 2px 4px 20px #c4c4c4a6;
-    border-radius: 2rem;
-    gap: 1rem;
-    padding: 1rem;
+    height: 100%;
+    width: 100%;
   }
   
 .total-cases p {
@@ -375,21 +361,18 @@ button:hover{
     color: #0065d1;
     margin: 0;
   }
-  
-.total-cases canvas {
-    width: 100%;
-    height: 250px;
-  }
+
   
 .wordwide {
-    flex: 1;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 2rem;
     gap: 2rem;
     box-shadow: 2px 4px 20px #c4c4c4;
     border-radius: 2rem;
-    min-width: 200px;
+
   }
   
 .wordwide-title p {
@@ -749,16 +732,10 @@ button:hover{
     .main{
         gap: 2rem;
     }
-    .total-cases-wrapper {
-        flex: 1.5;
-      }
       .wordwide {
         flex: 1;
       }
-      .total-cases{
-        max-width: 17rem;
-        
-      }
+    
     .blogs{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
@@ -828,22 +805,19 @@ button:hover{
     .statistics-number-item{
         font-size: 1rem;
     }
+    .chart{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
     .total-cases{
         width: 100%;
     }
     .total-cases canvas {
         height: 220px;
       }
-    .chart-info{
+    .wordwide{
         flex-wrap: wrap;
-      }
-    .total-cases-wrapper {
-        flex-direction: row;
-        justify-content: center;
-        width: 45rem;
-        width: -webkit-fill-available;
     }
-    
     .blogs{
         grid-template-columns: auto auto;
     }
@@ -921,13 +895,11 @@ button:hover{
         grid-column: 1 / 4;
         grid-row: 3 / 4;
     }
-    .chart-info {
-        flex-direction: column;
-      }
-      .total-cases-wrapper {
-        flex-direction: column;
-      }
-      .wordwide {
+    .chart{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        }
+    .wordwide {
         width: 100%;
       }
     .order-country-info {
@@ -946,12 +918,6 @@ button:hover{
     .footer-email-input{
         width: 100%;
     }
-   
-    .chart-info {
-        flex-direction: column;
-        gap: 2rem;
-        align-items: center;
-      }
       #chart1, #chart2 {
         width: 368px !important;
         height: 250px !important;
@@ -959,19 +925,13 @@ button:hover{
     .chart-total-cases{
         flex-direction: column;
     }
-      .total-cases-wrapper {
-        flex-direction: column;
-        width: 100%;
-        gap: 2rem;
-      }
-    
       .total-cases,
       .wordwide {
         max-width: none;
       }
     
       .total-cases {
-        padding: 1.5rem;
+        
         width: -webkit-fill-available;
       }
     
@@ -979,7 +939,6 @@ button:hover{
         padding: 2rem;
       }
       
-  
 }
 @media only screen and (max-width: 576px) {
     .container {
@@ -1036,13 +995,7 @@ button:hover{
         padding: 0 55px;
         background-size: 30px 30px;
     }
-  
-    .chart-info {
-        flex-direction: row;
-        overflow-x: auto;
-        gap: 1rem;
-    }
-  
+
     #chart1, #chart2 {
         width: 290px !important;
         height: 183px !important;
@@ -1074,4 +1027,10 @@ button:hover{
         bottom: 0rem;
     }
  
+}
+
+@media only screen and (max-width: 576px) {
+    .container{
+        padding: 1rem 0.3rem 1rem 0.3rem;
+    }
 }
