@@ -1029,8 +1029,11 @@ button:hover{
  
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 400px) {
     .container{
         padding: 1rem 0.3rem 1rem 0.3rem;
+    }
+    .wordwide-info{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
