@@ -913,7 +913,7 @@ button:hover{
     }
     .around-blog2::after {
         bottom: -3rem;
-        right: -5rem;
+        right: -4rem;
     }
     .footer-email-input{
         width: 100%;
@@ -1031,9 +1031,19 @@ button:hover{
 
 @media only screen and (max-width: 400px) {
     .container{
-        padding: 1rem 0.3rem 1rem 0.3rem;
+        margin-right: auto;
+        margin-right: auto;
+        overflow:hidden;
     }
     .wordwide-info{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .order-country-header{
+        flex-direction: column;
+    }
+    .footer-email{
+        flex-direction: column;
+        align-items: center;
+    
     }
 }
