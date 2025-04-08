@@ -189,7 +189,7 @@ button:hover{
 .dropdown-country{
     width: 40%;
 }
-.select-country{
+.select-country,.select-date{
     font-size: 1.3rem;
     border-radius: 55px;
     box-shadow: 1px 1px 6px #d6c8c8;
@@ -219,28 +219,8 @@ button:hover{
 
 }
 .select-date{
-    font-size: 1.3rem;
-    border-radius: 55px;
-    box-shadow: 1px 1px 6px #d6c8c8;
-    border: 2px solid rgba(137, 128, 128, 0.25);
-    width: 100%;
-    height: 60px;
-    color: #757575;
-    padding: 0 53px;
-    appearance: none;
-    background-color: rgba(0, 0, 0, 0);
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-attachment: scroll;
     background-image: url(../icons/date.svg), url(../icons/slector.svg);
-    background-size: auto;
-    background-origin: padding-box;
-    background-clip: border-box;
-    background-position: 5% 53%, 93% 50%;
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-    margin: 0 5px;
+   
 }
 .statistics-btn{
     width: 19%;
@@ -741,9 +721,9 @@ button:hover{
     height: 4rem;
     border-radius: 3rem;
     border: 2px solid #7575753c;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 4rem;
     font-size: 1.3rem;
-    background-image: url(../icons/email-icon.png);
+    background-image: url(../icons/icons8-email-50.png);
     background-size: 2.2rem 2.2rem;
     background-position: 1.5rem 0.7rem, 18rem 0.7rem;
     background-repeat: no-repeat , no-repeat;
